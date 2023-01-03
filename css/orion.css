@@ -1,0 +1,150 @@
+/* #wrap{
+  width: 1400px;
+  padding: 20px;
+  
+}
+
+#header{
+  width:100%;
+  padding:20px;
+  margin-bottom:20px;
+  background-image:url(/images/main_visual_img.jpeg) no-repeat;
+  /* background:fixed; */
+  /* background-size:cover;
+  position:relative;
+}
+.top_menu_bar{
+  display:inline;
+}
+
+
+.logo{
+
+}
+.utility_wrap li{
+  display:inline;
+}
+.news_photos_wrap{
+  width:3px;
+  height:3px;
+  display:inline;
+  size:1px;
+}
+
+#section{
+  width:100%;
+  padding:20px;
+  
+}
+
+#menu_rightside{
+  float:right;
+
+}
+
+#bottom_section{
+  clear:both;
+}
+
+#footer{
+  clear:both;
+}
+
+li{
+  list-style:none;
+  display:inline; 
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.ethics1 a{
+  position:relative;
+}
+.image_background{
+  position:absolute;
+  
+}
+.text_in p{
+  position:absolute;
+  top:-50px;
+
+}
+.white_footer{
+  display:flex;
+  position:relative;
+
+}
+.stock_price li{
+  display:flex;
+  position:absolute;
+  margin-right:20px;
+}
+.report_data{
+  display:flex;
+  position:absolute;
+}
+.cs_kakao{
+  display:flex;
+  position:absolute;
+} */ 
+
+.copyright{
+  color:white;
+  font-size: 13px;
+}
+.icons img{
+  width:30px;
+  height:30px;
+  padding:2px;
+  border: 1px solid #D2D2D2;
+  border-radius:10px;
+}
+.white{
+  color:#D2D2D2;
+  font-size: 13px;
+}
+
+.logo_menu_list a{
+  color:#777777;
+  font-size: 13px;
+}
+
+.left{
+  font-size: 7px;
+  color:#777777;
+}
+.family_site a{
+  color:#D2D2D2;
+  font-size: 14px;
+}
+.gray_line{
+  color:#D2D2D2;
+  padding:100px;
+}
+
+.big_white_text{
+  color:white;
+  position:absolute;
+	top:15%;
+	left:10%;
+	font-size:6rem;
+	width:480px;
+	word-break:keep-all;
+	opacity:0;
+	transition:all 2s;
+	letter-spacing: -2.5px;
+}
+
+.big_black_text{
+  color: black;
+  position:absolute;
+	top:15%;
+	left:10%;
+	font-size:6rem;
+	width:480px;
+	word-break:keep-all;
+	opacity:0;
+	transition:all 2s;
+	letter-spacing: -2.5px;
+}

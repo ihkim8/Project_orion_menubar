@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //상수
+      const pi = 3.14;
+      console.log("pi=" + pi);
+      const r = 10; //r 상수를 선언, 초기화
+      //콘솔은 로그 괄호 함수를 가지고 있는 주인. 함수가 저장된 덩어리
+      alert(2 * pi * r); // 원의 둘레
+      alert(pi * r * r); // 원의 너비
+      //r = 20; 이렇게 하면 오류남. 아래와 같이 재선언.
+      const r2 = 20;
+      alert(pi * r * r); // 원의 너비
+      //에러가 난 곳부터 실행 안 함
+      const r3;
+      r3=30;
+      //const r3;
+      //r3=30; 이렇게 하면 오류 남
+    </script>
+  </head>
+  <body>
+    <p>const 값 재할당 불가</p>
+    <p>const 같은 식별자 선언불가</p>
+    <p>const 선언 후 값 할당 불가</p>
+  </body>
+</html>

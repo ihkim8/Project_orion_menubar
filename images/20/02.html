@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="select2.css" />
+  </head>
+  <body>
+    <form action="#">
+      <fieldset class="selectbox">
+        <legend class="blind">색상을 선택하세요</legend>
+        <label for="select1">옵션</label>
+        <select name="" id="select1">
+          <option selected>색상</option>
+          <option>Red</option>
+          <option>Black</option>
+          <option>Green</option>
+        </select>
+      </fieldset>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+      var selectTarget = $(".selectbox select");
+      selectTarget.change(function () {
+        var selectOPT = $(this).children("option:selected").text();
+
+        $(this).siblings("label").text(selectOPT);
+      });
+    </script>
+    <!-- jquery는  javascript를 사용하기 편하게 만들어진 라이브러리. 이걸 적용하고서 자바스크립트 쓴다 -->
+  </body>
+</html>
+<!-- console.log(selectOPT); -->

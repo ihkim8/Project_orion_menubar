@@ -1,0 +1,14 @@
+select{
+  /* appearance -> 브라우저의 기본 select 버튼모양 감추기 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width:200px;
+  padding:0.8em 0.5em;
+  border-radius: 0px;
+  border:1px solid rgb(178, 33, 33);
+
+  /* background: url(arrow.svg) no-repeat; */
+  background: url(arrow.png) no-repeat 90% center;
+  background-size:15px;
+}

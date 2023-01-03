@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>오리온</title>
+ <link rel="apple-touch-icon" sizes="57x57" href="favicon/orion_favicon.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/orion_favicon.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/orion_favicon.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/orion_favicon.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/orion_favicon.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/orion_favicon.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/orion_favicon.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/orion_favicon.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/orion_favicon.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/orion_favicon.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/orion_favicon.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/orion_favicon.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/orion_favicon.ico/favicon-16x16.png">
+<link rel="manifest" href="favicon/orion_favicon.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/orion_favicon.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <!-- font.css 가장 먼저 올리기!!! 순서 중요 -->
+ <!-- font.css 가장 먼저 올리기!!! 순서 중요 -->
+ <link rel="stylesheet" href="css/font.css">
+ <link rel="stylesheet" href="reset.css">
+ <link rel="stylesheet" href="css/nomalize.css">
+ <link rel="stylesheet" href="css/orion.css"> 
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+ body{
+ font-family: 'Noto Sans KR', sans-serif;
+ }
+
+ #wrap {
+ width: 100%;
+ font-size: 40px; 
+ }
+
+ .header_wrap {
+ width: 100%;
+ background: transparent;
+ height: 78.75px;
+ position: absolute;
+ z-index: 2;
+ margin-top: 44px;
+ margin-left: -38px;
+ }
+
+ 
+ /* .main_visual_wrap {
+ width: 100%;
+ background: url(images/main_visual_img1.jpeg) no-repeat;
+ background-size: cover;
+ height: 100vh;
+ margin-top: -30px;
+ position: relative;
+ 
+ } */
+ .main_visual_wrap img{
+ width: 100%;
+ /* background: url(images/main_visual_img1.jpeg) no-repeat;
+ background-size: cover; */
+ height: 100vh;
+ margin-top: -30px;
+ position: relative;
+ 
+ }
+
+ .section1_category{
+  width:100%;
+ }
+
+ .section1_category img{
+  width:280px;
+  height:180px;
+  position:absolute;
+ }
+ .category1 img{
+  top: 770px;
+  left: 165px;
+  
+ }
+ .category2 img {
+    top: 770px;
+    left: 463px;
+}
+ .category3 img {
+    top: 770px;
+    left: 757px;
+}
+.category4 img {
+    top: 770px;
+    left:1049px;
+}
+ /* .main_visual_wrap{width:100%; background: white; height:687.74px;
+ background-image:url(images/main_visual_img.jpeg) no-repeat; height: 500px; margin-top:-30px; position:relative;} */
+ /* 메인비주얼 사진이 고정되려면? */
+ /* header_wrap+banner_wrap=766.49px
+ main_visual_picture가 여기 전체에 들어옴 
+ 1. 이 둘을 합치는 랩이 하나 더 필요한지
+ 2. 1과 관계 없이 크기 조절로 되는지
+ */
+ .content1_wrap {
+ width: 100%;
+ background: white;
+ height: 1100px;
+ margin-bottom:100px;
+ }
+ 
+ 
+ .content2_wrap {
+ width: 100%;
+ background: white;
+ height: 900px;
+ margin-left: 27px;
+ }
+
+ .footer_wrap {
+ width: 100%;
+ background: #222222;
+ height: 350px;
+ }
+
+ /* 자신의 .inner에 해당하는 요소의 width:100%; max-width:1400px */
+ .inner {
+ /* width:1400px; */
+ width: 100%;
+ max-width: 1200px;
+ height: inherit;
+ margin: auto;
+ background: transparent;
+ }
+
+ .top_black_footer {
+ background-color: #222222;
+ width: 100%;
+ background: #222222;
+ height: 230px;
+ }
+
+ .bottom_black_footer {
+ background-color: #222222;
+ width: 100%;
+ background: #222222;
+ height: 30px;
+ border-top: 0.3px solid gray;
+ }
+
+ .main_visual_wrap img {
+ size: 100%
+ }
+
+ /* .category1 img {
+ width: 278px;
+ height: 157px;
+ } */
+
+ 
+ .ethics_wrap {
+ display: flex;
+ position: relative;
+ margin-left: -33px;
+ }
+
+ .ethics_wrap img {
+ width: 100px;
+ height: 100px;
+ }
+
+ li {
+ list-style: none;
+ font-size: 16px;
+ text-decoration: none;
+ display: inline;
+ }
+
+ a {
+ list-style: none;
+ font-size: 16px;
+ text-decoration: none;
+ display: inline;
+ }
+
+ .top_menu_bar {
+ display: flex;
+ justify-content: space-evenly;
+ }
+
+ .logo {
+ width: 120;
+ height: 26px;
+ margin-top: 15px;
+ margin-left: -15px;
+ 
+ }
+ 
+ .logo a{
+ margin-left: 15px;
+ margin-right: 50px;
+ }
+ 
+ .gnb_1dep {
+ margin-top: 8px;
+ margin: 8px;
+ }
+
+ .gnb_1dep a {
+ color: white;
+ padding-right: 70px;
+ font-size: 18px;
+ 
+ }
+ 
+
+ .utility_wrap {
+ display: flex;
+ margin-top: 30px;
+ margin-left: -20px;
+ }
+
+ .language a {
+ color: white;
+ }
+
+ .search_icon {
+ display: flex;
+ width: 21px;
+ height: 27px;
+ margin: 11px;
+ margin-top: -5px;
+ margin-left: 23px;
+}
+
+.top_right_lines {
+ display: flex;
+ width: 6px;
+ height: 25px;
+ margin: 4px;
+ margin-left: 4px;
+ margin-top: -4px;
+}
+
+ .section1_category {
+ display: flex;
+ }
+
+ /* top_menu_bar */
+ /* content1 윤리경영 */
+ .content1_wrap {
+ display: block;
+ }
+
+ .ethics_wrap {
+ display: flex;
+ position: relative;
+ }
+ .footer_list p {
+ font-size: 14px;
+ }
+ 
+ .ethics_title {
+ margin-top: 100px;
+ text-align: center;
+ font-size: 18px;
+ position: absolute;
+ margin-left: 251px;
+ }
+ p{
+ font-size: 25px;
+ }
+ button{
+ font-size: 18px;
+ }
+
+ .ethics_list {
+ margin-top: 300px;
+ display: flex;
+ position: relative;
+ margin-left: 0px;
+ }
+
+ 
+ .ethics_list_wrap {
+ display: flex;
+ margin-right: -3px;
+ flex-wrap: wrap;
+ }
+ .ethics_list_wrap1 {
+ display: flex;
+ position:relative;
+ margin-bottom: 48px;
+ }
+ 
+ .ethics_list_wrap2 {
+ display: flex;
+ position:relative;
+ }
+ .ethics_list_wrap1 a,
+ .ethics_list_wrap2 a,.ethics7 a{
+ text-align: left;
+ display:block;
+ position:relative;
+ width:100%; 
+ height:100%;
+ }
+ .ethics_list_wrap1 a .big,
+ .ethics_list_wrap2 a .big,
+ .ethics7 .big{
+ position:absolute;
+ top:20px;
+ left:40px;
+ font-size: 2em;
+ color:white;
+ }
+ 
+ .ethics1 p.big,
+ .ethics4 p.big,
+ {
+ position:absolute;
+ top:20px;
+ left:40px;
+ font-size: 2em;
+ color:white;
+ }
+ .ethics7 {
+ display: flex;
+ margin-right: 101px;
+ }
+ .ethics1 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 10px;
+ margin-left: 40px;
+ }
+
+ .ethics2 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 20px;
+ }
+
+ .ethics3 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 10px;
+ }
+
+ .ethics4 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 20px;
+ margin-left: 40px;
+ margin-top: -20px;
+ }
+
+ .ethics5 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 11px;
+ margin-top: -20px;
+ margin-left: 0px;
+ }
+
+ .ethics6 img {
+ width: 280px;
+ height: 280px;
+ margin-right: 20px;
+ margin-top: -20px;
+ margin-left: 10px;
+ }
+
+ .ethics7 img {
+ width: 280px;
+ height: 590px;
+ margin-right: 100px;
+ }
+
+ .big {}
+
+ /* content 2 뉴스 */
+ .newstable {
+ display: flex;
+ margin-top: -30px;
+ }
+
+ h3 {}
+
+ .news_list img {
+ width: 280px;
+ height: 280px;
+ }
+
+ .red_underline {
+ color: red;
+ text-decoration: underline;
+ font-size: 20px;
+ }
+
+ .newsroom {
+ text-align: center;
+ 
+ }
+ .news_menu_list {
+ color: gray;
+ text-align: center;
+ font-size: 20px;
+ margin-bottom: 20px;
+ padding: 20px;
+ }
+
+ .news_menu_list li {
+ padding: 20px;
+ }
+
+ .menu_font {
+ font-size: 20px;
+ color:black;
+ }
+
+ hr {
+ color: rgb(219, 216, 216);
+ size: 0.2px;
+ }
+
+ /* footer */
+ 
+ .white_footer_wrap {
+ border-top: 0.3px solid gray;
+ }
+ 
+ .white_footer {
+ background-color: white;
+ padding: 10px;
+ width: 100%;
+ text-align: center;
+ margin-left: 49px;
+ display: flex;
+ }
+ .white_footer a {
+ color: black;
+ 
+ }
+ .bold{
+ font-weight: bold;
+ }
+
+ /* black footer */
+ .logo_menu {
+ margin-left: 0px;
+ margin-top:5px;
+ display: flex;
+ padding:12px;
+ justify-content: space-evenly;
+ }
+ .logo_menu img {
+ margin-left: -40px;
+ margin-top: 60px;
+}
+ .red {
+ color: red;
+ }
+ 
+ .white {
+ color: #D2D2D2;
+ font-size: 14px;
+}
+
+ .address {
+ display: flex;
+ flex-direction: column;
+}
+
+ .ethics1 a {
+ position: relative;
+ margin-right: 11px;
+ }
+ .image_background {
+ position: absolute;
+ }
+
+ /* .text_in p{
+ position:absolute;
+ top:-50px;
+
+} */
+ .white_footer {
+ /* display:flex;
+ position:relative; */
+ }
+
+ .stock_price {
+ /* display:flex;
+ position:absolute;
+ margin-right:20px; */
+ margin-right: 30px;
+ margin-left: 30px;
+ }
+
+ .report_data {
+ /* display:flex;
+ position:absolute; */
+ margin-right: 30px;
+ }
+
+ .cs_kakao {
+ /* display:flex;
+ position:absolute; */
+ }
+
+ /* black footer */
+ .light_gray{
+ color:#777777;
+ }
+ 
+ .logo_menu_list {
+ margin-left: 895px;
+ margin-top: -4px;
+ margin-right: -68px;
+}
+ .logo_menu_list a {
+ color: #f3eeee;
+ font-size: 18px;
+ font-weight: bold;
+ }
+
+ .logo_menu_list img {
+ margin-bottom: -4px;
+ margin-left: -2px;
+ width: 20px;
+ margin-right: 12px;
+ }
+ 
+ .right {
+ margin-left: 1194px;
+ margin-top: -39px;
+ 
+}
+
+
+ .right a{
+ font-size:14px;
+ margin:5px;
+ }
+
+ .left {
+ font-size: 7px;
+ color: #777777;
+ margin-left: 65px;
+ margin-top: 20px;
+ }
+ .copyright {
+ color: #777777;
+ font-size: 14px;
+ margin-left: 70px;
+ margin-top: 37px;
+ }
+ 
+ .footer_bottom {
+ display: flex;
+ align-items: flex-end;
+ justify-content: space-between;
+ }
+
+ .family_site {
+ margin-left: -822px;
+ margin-right: 20px;
+ }
+ .family_site a {
+ color: #D2D2D2;
+ font-size: 14px;
+ border: 1px solid gray;
+ padding: 12px;
+ margin-left: 43px;
+ margin-right: 26px;
+ height: -22px;
+ /* color: #D2D2D2;
+ font-size: 14px;
+ border: 1px solid gray;
+ padding: 12px;
+ margin-left: 112px;
+ margin-right: 65px; */
+ }
+ 
+ .family_site img {
+ height: 13px;
+ width: 19px;
+ }
+
+
+
+ /* main_slide넘어가는 거  */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+      }
+      ul {
+        list-style: none;
+      }
+      #brandVisual {
+        width: 100%;
+        overflow: hidden;
+        height: 900px;
+        min-width: 1000px;
+        background-color: transparent;
+        position: relative;
+        /* animate되는 요소들은 둘 중 하나만 비율값으로 줄 수 있음. 둘다 주면 안됨. */
+      }
+      #brandVisual ul {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        /* 포지션 속성을 사용할 것이기 때문에 플렉스는 사실 필요 없음 */
+        /* right는 부모의 길이가 구체적으로 잡혀있을 때 쓸 수 있음(절대단위일 때) relative에서도 안 잡힘. 상대적일 때 right를 못 씀. bottom도 높이가 정해져있을 때 쓸 수 있음. 상대적일 때 못 씀. 부모 값을 고정시켜야 적용 가능.*/
+      }
+      #brandVisual ul li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* line-height: 500px; */
+        font-size: 5em;
+      }
+      #brandVisual img {
+        width: 100%;
+        height: 100%;
+      }
+      .visual_0 {
+        left: 0%;
+        background: transparent;
+      }
+      .visual_1 {
+        left: 100%;
+        background: transparent;
+      }
+      .visual_2 {
+        left: 200%;
+        background: transparent;
+      }
+      #buttonList {
+        display: flex;
+        position: absolute;
+        /* body가 기준이 됨 */
+        top: 450px;
+        left: 50%;
+        margin-left: -300px;
+      }
+
+      #buttonList li {
+        width: 100px;
+        height: 100px;
+
+        /* background: url(/javascript/04/img/btn.png) 0 0 no-repeat; */
+        /* background: url(/javascript/04/img/btn.png) 0 -16px no-repeat; */
+      }
+      #buttonList li.on {
+        width: 100px;
+        height: 100px;
+        /* background: url(/javascript/04/img/btn.png) 0 0 no-repeat; */
+      }
+      #buttonList img {
+        width: 280px;
+        height: 180px;
+        z-index: 99999;
+
+        /* background: url(/javascript/04/img/btn.png) 0 0 no-repeat; */
+        /* background: url(/javascript/04/img/btn.png) 0 -16px no-repeat; */
+      }
+
+      .button1 {
+        margin-left: -150px;
+      }
+      .button2 {
+        margin-left: -50px;
+      }
+      .button3 {
+        margin-left: 100px;
+      }
+      .button4 {
+        margin-left: 300px;
+      }
+      #buttonList a {
+        text-decoration: none;
+        text-align: center;
+      }
+      .controls {
+        display: flex;
+        position: absolute;
+       
+      }
+
+      .controls li.prev a {
+      }
+
+      .button1 {
+        width: 280px;
+        height: 180px;
+      }
+     
+      img.button1 {
+    margin-left: -150px;
+    margin-top: 328px;
+}
+      .button2 {
+        width: 280px;
+        height: 180px;
+        margin-left: -50px;
+      }
+      img.button2 {
+        margin-left: -50px;
+        margin-top: 328px;
+      }
+      .button3 {
+        width: 280px;
+        height: 180px;
+      }
+      img.button3 {
+    margin-left: 2px;
+    margin-top: 328px;
+}
+      .button4 {
+        width: 280px;
+        height: 180px;
+        margin-left: 300px;
+      }
+      img.button4 {
+        margin-left: 2px;
+        margin-top: 328px;
+      }
+      
+  /* 2deps */
+  .dep2-1{
+    display:flex;
+    flex-direction: row;
+  }
+  .dep2-1-bold, .dep2-2-bold, .dep2-3-bold, .dep2-4-bold, .dep2-5-bold, .dep2-6-bold{
+    display:flex;
+    flex-direction: row;
+  }
+
+  /* .dep2-6{
+    display:flex;
+    flex-direction: row;
+  } */
+
+  .dep3-1, .dep3-2, .dep3-3, .dep3-4, .dep3-5, .dep3-6, .dep3-7{
+    display:flex;
+    flex-direction: column;
+  }
+  .dep2-1, .dep2-2, .dep2-3, .dep2-4, .dep2-5, .dep2-6{
+    display:flex;
+    flex-direction: row;
+    display: none;
+  }
+
+  /* .dep2-1, .dep2-2, .dep2-3, .dep2-4, .dep2-5, .dep2-6{
+    display:flex;
+    flex-direction: row;
+    display: none;
+  } */
+    
+ /* layer */
+ #layer {
+ display: block;
+ position: fixed;
+ width: 500px;
+ height: 500px;
+ background: #ccc;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+ z-index: 999999999;
+ font-size: 2.4em;
+ padding: 3em;
+ box-sizing: border-box;
+ line-height: 2;
+ top: 50px;
+ left: 150px;
+ }
+
+ #layer button {
+ position: absolute;
+ cursor: pointer;
+ padding: 10px 20px;
+ right: 0;
+ top: 0;
+ background-color: #222;
+ color: white;
+ }
+ </style>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="slide01-orion.js"></script>
+ <script src="slide01.js"></script>
+</head>
+
+<body>
+ <div id="layer">
+ <p>이 사이트는 학습용으로 제작하였으며 오리온과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다.</p>
+ <button>닫기</button>
+ </div>
+ <div id="wrap">
+ <div class="header_wrap">
+ <div class="top_menu_bar">
+ <div class="logo">
+ <a href="#">
+ <img src="images/logo.png" alt="Orion_logo">
+ </a>
+ </div>
+ <nav class="gnb_wrap">
+ <ul class="gnb_1dep">
+ <li>
+ <a href="#"> 회사소개 </a>
+ <!-- 여기에 2dep 추가 작성하기 -->
+  <div class="dep2-1">
+    <ul class="dep2-1-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">오리온역사관</span></a>
+        <ul class="dep3-1">
+          <li><a href="#">오리온 소개</a></li>
+          <li><a href="#">경영방침</a></li>
+          <li><a href="#">CI 소개</a></li>
+          <li><a href="#">회사소개서</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">역사관</span></a>
+        <ul class="dep3-2">
+          <li><a href="#">창업주 이양구 회장</a></li>
+          <li><a href="#">연혁</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">오리온 계열사</span></a>
+        <ul class="dep3-3">
+          <li><a href="#">오리온</a></li>
+          <li><a href="#">오리온농협</a></li>
+          <li><a href="#">오리온재단</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">오리온홀딩스 계열사</span></a>
+        <ul class="dep3-4">
+          <li><a href="#">오리온제주용암수</a></li>
+          <li><a href="#">산둥루캉하오리요우</a></li>
+          <li><a href="#">쇼박스</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">위치안내</span></a>
+        <ul class="dep3-5">
+          <li><a href="#">본사</a></li>
+          <li><a href="#">공장</a></li>
+          <li><a href="#">영업소</a></li>
+          <li><a href="#">물류센터</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+    </ul>
+  </div>
+ </li>
+ <li>
+ <a href="#">사업분야</a>
+  <div class="dep2-2">
+    <ul class="dep2-2-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">제과</span></a>
+        <ul class="dep3-1">
+          <li><a href="#">신제품</a></li>
+          <li><a href="#">비스킷</a></li>
+          <li><a href="#">캔디</a></li>
+          <li><a href="#">껌</a></li>
+          <li><a href="#">초콜릿</a></li>
+          <li><a href="#">마켓오</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <ul class="dep3-2">
+          <li><a href="#"><span class="submenu_bold">닥터유</span></a></li>
+          <li><a href="#">용암수/면역수</a></li>
+          <li><a href="#">바/볼</a></li>
+          <li><a href="#">음료</a></li>
+          <li><a href="#">파우더</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">마켓오네이처</span></a>
+        <ul class="dep3-3">
+          <li></li>
+          <li><a href="#">오!그래놀라</a></li>
+          <li><a href="#">오!그래놀라 바</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">바이오</span></a>
+        <ul class="dep3-4">
+          <li><a href="#">산둥루캉하오리요우</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+    </ul>
+  </div>
+ </li>
+ <li>
+ <a href="#">윤리경영</a>
+  <div class="dep2-3">
+    <ul class="dep2-3-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">개요</span></a>
+        <ul class="dep3-1">
+          <li><a href="#">윤리경영 체계</a></li>
+          <li><a href="#">제도/시스템</a></li>
+          <li><a href="#">주요활동</a></li>
+          <li><a href="#">부패방지</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">임직원</span></a>
+        <ul class="dep3-2">
+          <li><a href="#">인권경영</a></li>
+          <li><a href="#">안전보건</a></li>
+          <li><a href="#">인재육성</a></li>
+          <li><a href="#">임직원만족</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">고객</span></a>
+        <ul class="dep3-3">
+          <li><a href="#">고객만족</a></li>
+          <li><a href="#">식품안전</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">협력회사</span></a>
+        <ul class="dep3-4">
+          <li><a href="#">동반성장</a></li>
+          <li><a href="#">대리점 상생</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">주주</span></a>
+        <ul class="dep3-5">
+          <li><a href="#">기업지배구조</a></li>
+          <li><a href="#">주주가치제고</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">사회</span></a>
+        <ul class="dep3-6">
+          <li><a href="#">친환경 경영</a></li>
+          <li><a href="#">사회공헌</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">보고서 및 주요성과</span></a>
+        <ul class="dep3-7">
+          <li><a href="#">대외평가∙수상</a></li>
+          <li><a href="#">회사소개서</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+
+    </ul>
+  </div>
+ </li>
+ <li>
+ <a href="#">투자정보</a>
+  <div class="dep2-4">
+    <ul class="dep2-4-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">주식정보</span></a>
+        <ul class="dep3-1">
+          <li><a href="#">주가정보</a></li>
+          <li><a href="#">주주구성</a></li>
+          <li><a href="#">배당정보</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">주주총회</span></a>
+        <ul class="dep3-2">
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">기업지배구조</span></a>
+        <ul class="dep3-3">
+          <li><a href="#">기업지배구조</a></li>
+          <li><a href="#">이사회 구성</a></li>
+          <li><a href="#">이사회 권한 및 규정</a></li>
+          <li><a href="#">이사회 운영 현황</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">재무정보</span></a>
+        <ul class="dep3-4">
+          <li><a href="#">재무정보</a></li>
+          <li><a href="#">분기실적자료</a></li>
+          <li><a href="#">감사보고서</a></li>
+          <li><a href="#">공시</a></li>
+          <li><a href="#">공고</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">IR문의</span></a>
+        <ul class="dep3-5">
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+    </ul>
+  </div>
+ </li>
+ <li>
+ <a href="#">뉴스룸</a>
+  <div class="dep2-5">
+    <ul class="dep2-5-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">유튜브</span></a>
+        <ul class="dep3-1">
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">인스타그램</span></a>
+        <ul class="dep3-2">
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+      <li>
+        <a href="#"><span class="submenu_bold">보도자료</span></a>
+        <ul class="dep3-2">
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+    </ul>
+  </div>
+ </li>
+ <li>
+ <a href="#">고객센터</a>
+  <div class="dep2-6">
+    <ul class="dep2-6-bold">
+      <li>
+        <a href="#"><span class="submenu_bold">상담페이지</span></a>
+        <ul class="dep3-1">
+          <li><a href="#">상담접수</a></li>
+          <li><a href="#">접수내역 조회</a></li>
+          <li><a href="#">신규거래 제안</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">피해보상기구</span></a>
+        <ul class="dep3-2">
+          <li><a href="#">고객의 소리</a></li>
+          <li><a href="#">상담내용 처리과정</a></li>
+          <li><a href="#">소비자 분쟁(보상 처리과정)</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->
+      <li>
+        <a href="#"><span class="submenu_bold">자주 묻는 질문</span></a>
+        <ul class="dep3-3">
+          <li><a href="#">제품</a></li>
+          <li><a href="#">표기</a></li>
+          <li><a href="#">기타</a></li>
+          <li><a href="#">개선 반영 사례</a></li>
+        </ul>
+      </li>
+      <!-- //dep2  -->  
+    </ul>
+  </div>
+ </li>
+ </ul>
+ 
+ </nav>
+ <div class="utility_wrap">
+ <li>
+ <li>
+ <div class="language">
+ <a href="#">English</a>
+ <!-- 여기에 클릭하면 한국어 나오도록 추가 작성 -->
+ </div>
+ </li>
+ <li></li><a href="#" class="search_icon">
+ <img src="images/search_icon.png" alt="search">
+ </a>
+ </li>
+ <li><a href="#" class="top_right_lines">
+ <img src="images/top_menu_right.png" alt="top_menu_3lines">
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <div class="inner">
+ 
+ </div>
+ </div>
+ <div class="main_visual_wrap">
+  <div id="wrap">
+    <div id="brandVisual">
+      <ul>
+        <li class="visual_0">
+          <a href="#">
+            <img src="images/main_visual_img1.jpeg" />
+            img1</a
+          >
+        </li>
+        <li class="visual_1">
+          <a href="#">
+            <img src="images/main_visual_img2.jpeg" />
+            img2</a
+          >
+        </li>
+        <li class="visual_1">
+          <a href="#">
+            <img src="images/main_visual_img3.jpeg" />
+            img3</a
+          >
+        </li>
+        <li class="visual_1">
+          <a href="#">
+            <img src="images/main_visual_img4.jpeg" />
+            img3</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul id="buttonList" class="controls">
+    <li class="prev">
+      <a href="#" class="button1">
+        <img src="images/main_visual_img1.jpeg" alt="제과" class="button1" />
+        <!-- <h3>제과</h3> -->
+      </a>
+    </li>
+    <li class="prev">
+      <a href="#" class="button2">
+        <img src="images/main_visual_img2.jpeg" alt="음료" class="button2" />
+        <!-- <h3>음료</h3> -->
+      </a>
+    </li>
+    <li class="prev">
+      <a href="#" class="button3">
+        <img src="images/main_visual_img3.jpeg" alt="간편대용식" class="button3" />
+        <!-- <h3>간편대용식</h3> -->
+      </a>
+    </li>
+    <li class="prev">
+      <a href="#" class="button4">
+        <img src="images/main_visual_img4.jpeg" alt="바이오" class="button4" />
+        <!-- <h3>바이오</h3> -->
+      </a>
+    </li>
+  </ul>
+ <div class="inner">
+
+ 
+ </div>
+ </div>
+ <div class="content1_wrap"> 
+ <div class="inner">
+ <div class="ethics_wrap">
+ <div class="ethics_title">
+ <h1>윤리경영</h1>
+ <p>오리온이 지향하는 윤리경영은 준법과 윤리에 기반한 경영활동을 통해 <br>모든 이해관계자에게 기여함으로써 지속적으로 성장해 나가는 것입니다. </p>
+ </div>
+ <div class="ethics_list">
+ <div class="ethics_list_wrap">
+ <div class="ethics_list_wrap1">
+ <div class="ethics1">
+ <a href="#">
+ <img src="images/center_img01.jpeg" alt="message">
+ <div class="text_in">
+ <p class="big">개요</p>
+ </div>
+ </a>
+ </div>
+ <div class="ethics2">
+ <a href="#">
+ <img src="images/center_img02.jpeg" alt="members">
+ <div>
+ <p class="big">임직원</p>
+ </div>
+ </a>
+ </div>
+ <div class="ethics3">
+ <a href="#">
+ <img src="images/center_img03.jpeg" alt="customer">
+ <div>
+ <p class="big">고객</p>
+ </div>
+ </a>
+ </div>
+ </div>
+ <div class="ethics_list_wrap2">
+ <div class="ethics4">
+ <a href="#">
+ <img src="images/center_img04.jpeg" alt="cooperate_company">
+ <div>
+ <p class="big">협력회사</p>
+ </div>
+ </a>
+ </div>
+ <div class="ethics5">
+ <a href="#">
+ <img src="images/center_img05.jpeg" alt="stockholders">
+ <div>
+ <p class="big">주주</p>
+ </div>
+ </a>
+ </div>
+ <div class="ethics6">
+ <a href="#">
+ <img src="images/center_img06.jpeg" alt="society">
+ <div>
+ <p class="big">사회</p>
+ </div>
+ </a>
+ </div>
+ </div>
+ </div>
+ <div class="ethics7">
+ <a href="#">
+ <img src="images/center_img07.jpeg" alt="report">
+ <div>
+ <p class="big">보고서 및 <br>주요성과 </p>
+ </div>
+ </a>
+ </div>
+ </div>
+ </div> 
+ </div> 
+ </div>
+ <div class="content2_wrap"> 
+ <div class="inner">
+ <div class="news">
+ <div class="newsroom">
+ <h4>뉴스룸</h4>
+ <div class="newsroom_menu">
+ <ul class="news_menu_list">
+ <li>
+ <a href="#">
+ <span class="red_underline">전체</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="menu_font">유튜브</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="menu_font">인스타그램</span>
+ </a>
+ </li>
+ <li>
+ <a href="#">
+ <span class="menu_font">보도자료</span>
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <div class="news_list">
+ <div class="news_top">
+ <ul>
+ <li><a href="#"><img src="images/2nd_center_img1.jpeg" alt="news1"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img2.png" alt="news2"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img3.jpeg" alt="news3"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img4.jpeg" alt="news4"></a></li>
+ </ul>
+ </div>
+ <div class="news_bottom">
+ <ul>
+ <li><a href="#"><img src="images/2nd_center_img5.png" alt="news1"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img6.jpeg" alt="news2"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img7.jpeg" alt="news3"></a></li>
+ <li><a href="#"><img src="images/2nd_center_img8.jpeg" alt="news4"></a></li>
+ </ul>
+ </div>
+ </div>
+ <!-- <table class="news_list">
+ <tr>
+ <td><a href="#"><img src="images/2nd_center_img1.jpeg" alt="new1"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img2.png" alt="news2"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img3.jpeg" alt="new3"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img4.jpeg" alt="news4"></a></td> 
+ </tr>
+ <tr>
+ <td><a href="#"><img src="images/2nd_center_img5.png" alt="news5"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img6.jpeg" alt="new6"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img7.jpeg" alt="news7"></a></td>
+ <td><a href="#"><img src="images/2nd_center_img8.jpeg" alt="news8"></a></td>
+ </tr>
+ </table> -->
+ </div>
+ </div>
+ </div>
+ <div class="white_footer_wrap">
+ <div class="inner">
+ <div class="white_footer">
+ <ul>
+ <li class="stock_price">
+ <a href="#">주가 <span class="red">118,000</span>
+ <img src="images/stock_icon.png" alt="below_arrow">
+ <span class="bold">-1,500 -1.26%</span>
+ </a>
+ </li>
+ <li class="gray_line">|</span>
+ <li class="report_data">
+ <a href="#"><span class="bold">IR</span> <span class="red">공시자료</span> 바로가기 </a>
+ </li>
+ <li class="gray_line">|</span>
+ <li class="cs_kakao">
+ <a href="#">카카오채널 <span class="red">고객센터</span> 추가하기 <img src="images/icon_add.png" alt="below_arrow">
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ <div class="footer_wrap">
+ <div class="footer_list">
+ 
+ <div class="top_black_footer">
+ <div class="logo_menu">
+ <a href="#">
+ <img src="images/logo_gray.png" alt="white_logo">
+ </a>
+ <div class="logo_menu_list">
+ <ul>
+ <li>
+ <a href="#">고객문의 <img src="images/link_icon.png" alt="link">
+ </a>
+ </li>
+ <li>
+ <a href="#">신규거래 제안 <img src="images/link_icon.png" alt="link">
+ </a>
+ </li>
+ <li>
+ <a href="#">채용 <img src="images/link_icon.png" alt="link">
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <div class="address">
+ <div class="left">
+ <p>
+ <span class="white">(주)오리온 서울특별시 구로구 반포대로 8429 </span> 
+ <span class="light_gray">사업자등록번호</span> 
+ <span class="white">888-88-8888888</span> 
+ <span class="light_gray">대표이사</span> 
+ <span class="white">권인규</span>
+ <br>
+ <span class="light_gray">전화번호</span>
+ <span class="white">02.8888.8888</span> 
+ <span class="light_gray">고객센터</span> 
+ <span class="white">080.8888.8888(수신자 부담)</span> 
+ <span class="light_gray">제품 구입문의</span> 
+ <span class="white">02.7777.7777</span>
+ </p>
+ </div>
+ <div class="right">
+ <p>
+ <a href="#"><span class="light_gray">법적고지</span></a>
+ <a href="#"><span class="white">개인정보처리방침</span></a>
+ <a href="#"><span class="light_gray">이메일무단수집거부</span></a>
+ <a href="#"><span class="light_gray">오시는 길</span></a>
+ </p>
+ </div>
+ </div>
+ </div>
+ <div class="bottom_black_footer">
+ <div class="footer_bottom">
+ <div class="copyright"> COPYRIGHT ORION CORP. ALL RIGHT RESERVED. </div>
+ <div class="icons">
+ <a href="#"><img src="images/icon_youtube.png" alt="youtube"></a>
+ <a href="#"><img src="images/icon_instagram.png" alt="instagram"></a>
+ <a href="#"><img src="images/icon_blog.png" alt="blog"></a>
+ <a href="#"><img src="images/icon_facebook.png" alt="facebook"></a>
+ </div>
+ <div class="family_site">
+ <a href="#">패밀리 사이트 <img src="images/family_site_click.png" alt="click_up">
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="inner">
+ 
+ </div>
+ </div>
+ </div>
+ <script src="js/script.js"></script>
+</body>
+
+</html>

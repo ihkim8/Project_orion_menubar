@@ -1,0 +1,93 @@
+.checkbox, .toggle{margin:2em 0;}
+/* big checkbox */
+.checkbox input.checkbox1, .radio1{
+  font-size:1em;
+  width:1.25em;
+  /* 너비설정 */
+  height:1.25em;
+  /* 높이설정 */
+  vertical-align: middle;
+  /* 레이블과의수직정렬 */
+}
+.checkbox input.check1+label, .radio1+label{
+  font-size:1.25em;
+  vertical-align: middle;
+}
+
+/* -------------------------------------------- */
+.check2+label{position:relative;}
+.check2{display:none;}
+.check2+label:before{
+  /* 체크박스 배경 */
+  display:inline-block;
+  content:'';
+  width:1.25em;
+  height:1.25em;
+  background-color:#a00;
+  border: 2px solid #a66;
+  border-radius: 50%;
+  margin: 0 5px -6px 0;
+}
+.check2+label:after{
+  /* 체크마크 */
+  content:'🍜';
+  position: absolute;
+  left:4px;
+  font-size: 0.5em;
+  line-height: 2.8em;
+  transition: all 0.3s;
+  opacity: 0;
+  transform:scale(0);
+}
+input:checked.check2+label:after{
+  opacity: 1;
+  transform:scale(1);
+}
+
+.toggle{
+  position:relative;
+  display:inline-block;
+}
+.toggle input{
+  display: none;
+}
+.toggle label{
+  display: block;
+  width:48px;
+  height:24px;
+  text-indent: -280%;
+  /* 레이블 텍스트 왼쪽 이동 */
+  user-select:none;
+  /* 레이블 선택 차단 */
+}
+.toggle label:before,
+.toggle label:after{
+  content:'';
+  display:block;
+  position:absolute;
+  cursor:pointer;
+}
+.toggle label:before{
+  /* 배경 */
+  width:100%;
+  height:100%;
+  background-color:#dedede;
+  border-radius:1em;
+  transition: background-color 0.25s ease;
+}
+.toggle label:after{
+  top:0;
+  left;
+  width:24px;
+  height:24px;
+  background-color:#fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0 , .45);
+  border-radius:50%;
+  transition:left 0.25s ease;
+}
+.toggle input: checked+label::before{
+  background-color:skyblue;
+}
+.toggle input: checked+label::after{
+  left:24px
+}

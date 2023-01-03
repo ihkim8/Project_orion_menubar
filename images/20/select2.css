@@ -1,0 +1,57 @@
+select{
+  padding:0;
+  width:auto;
+  border-image:none;
+  background:none;
+  border-radius:0;
+}
+.blind{
+  position:absolute;
+  clip:rect(0 0 0 0);
+  width:1px;
+  height:1px;
+  margin:1px;
+  overflow: hidden;
+}
+fieldset{
+  border:0 none;
+}
+/* select.css의 속성 초기화 */
+
+.selectbox{
+  position:relative;
+  width:200px;
+  z-index:1;
+  border:1px solid #999;
+}
+/* 가상선택자로 화살표만들기 */
+.selectbox:before{
+  content: "";
+  position: absolute;
+  width:0px;
+  height:0px;
+  top:50%;
+  right:15px;
+  margin-top:-2px;
+  border-top:5px solid #333;
+  border-right:5px solid transparent;
+  border-bottom:5px solid transparent;
+  border-left:5px solid transparent;
+}
+.selectbox label{
+  position:absolute;
+  top:1px;
+  left:5px;
+  padding:.8em .5em;
+  color:#ff0000;
+  /* IE8에서 label이 클릭되지 않는 것 해결 */
+  z-index: -1;
+}
+.selectbox select{
+  width:100%;
+  height:auto;
+  line-height:normal;
+  padding:.8em .5em;
+  border:0;
+  opacity:0;
+}
